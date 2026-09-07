@@ -1,10 +1,19 @@
 # AI PR Guardian — an AI quality gate for pull requests
 
-*[Polish version →](README.md)*
+*[Polish version →](README.md)* · [Changelog](CHANGELOG.md) · [MIT licence](LICENSE)
 
 A Claude Code plugin that reviews a pull request with a "regression guard" subagent, forces
 a second agent to argue against its findings, and turns the surviving ones into an exit code.
 Blocks the push locally and marks the PR on GitHub.
+
+> ⚠️ **An experiment, not a product.** It was built to test one idea: whether a model
+> can guard the classes of bug a script cannot catch. It has never run against a real
+> pull request or a self-hosted runner, it is not maintained, and it is not part of my
+> portfolio. The repository stays public because the measurement in `docs/STAN.md`
+> may be useful to someone.
+>
+> **Authorship:** 11 of its 13 commits were written by Claude Code — the tool largely
+> wrote itself. Measured with `git shortlog -sn main`.
 
 ---
 

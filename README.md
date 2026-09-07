@@ -1,9 +1,18 @@
 # AI PR Guardian
 
-*[English version →](README.en.md)*
+*[English version →](README.en.md)* · [Dziennik zmian](CHANGELOG.md) · [Licencja MIT](LICENSE)
 
 Strażnik AI dla Pull Requestów. Dodatkowa bramka jakości obok strażników
 skryptowych, testów i smoke'ów — **nie ich zamiennik**.
+
+> ⚠️ **Projekt eksperymentalny, nie produkt.** Powstał jako sprawdzenie jednego
+> pomysłu: czy model potrafi pilnować klas błędów, których nie da się złapać
+> skryptem. Nie był uruchomiony na prawdziwym Pull Requeście ani na self-hosted
+> runnerze, nie jest utrzymywany i nie należy do portfolio. Repozytorium zostaje
+> publiczne, bo pomiar z `docs/STAN.md` może się komuś przydać.
+>
+> **Autorstwo:** 11 z 13 commitów napisał Claude Code — narzędzie powstało
+> w większości samo o sobie. Zmierzone: `git shortlog -sn main`.
 
 | | |
 |---|---|
@@ -66,8 +75,8 @@ Wymaga self-hosted runnera i sekretu `ANTHROPIC_API_KEY`.
 **3. Lokalnie** — sklonuj to repozytorium obok projektu:
 
 ```bash
-git clone https://github.com/krzysiek2115op/AI-PR-GUARDIAN- ~/AI-PR-GUARDIAN-
-claude --plugin-dir ~/AI-PR-GUARDIAN- -p "/ai-pr-guardian:przeglad --baza origin/plugin-1-sklep-kursow"
+git clone https://github.com/krzysiek2115op/ai-pr-guardian ~/ai-pr-guardian
+claude --plugin-dir ~/ai-pr-guardian -p "/ai-pr-guardian:przeglad --baza origin/plugin-1-sklep-kursow"
 ```
 
 ## Jak dodać strażnika
