@@ -46,7 +46,7 @@ jobs:
       - name: Pobierz strażnika
         uses: actions/checkout@v6
         with:
-          repository: krzysiek2115op/AI-PR-GUARDIAN-
+          repository: krzysiek2115op/ai-pr-guardian
           # Pinuj do taga po pierwszym wydaniu: ref: v0.1.0
           path: .straznik-ai-plugin
           fetch-depth: 1
@@ -85,7 +85,7 @@ jobs:
 
       - uses: actions/checkout@v6
         with:
-          repository: krzysiek2115op/AI-PR-GUARDIAN-
+          repository: krzysiek2115op/ai-pr-guardian
           path: .straznik-ai-plugin
           fetch-depth: 1
 

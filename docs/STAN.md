@@ -14,11 +14,11 @@ z marketplace'em w tym samym repozytorium.
 
 | Repozytorium | Rola | Dostęp |
 |---|---|---|
-| `krzysiek2115op/AI-PR-GUARDIAN-` | **silnik** — ten katalog | publiczne |
+| `krzysiek2115op/ai-pr-guardian` | **silnik** — ten katalog | publiczne |
 | `MatthewPlugins/Pod-strona-Szkolenia` | repozytorium **sprawdzane** | prywatne, **niedostępne z sesji przypiętej do `krzysiek2115op`** |
 
 Ograniczenie cross-tier działa w obie strony i jest trwałe. Sesja z rootem
-`AI-PR-GUARDIAN-` nie odczyta repozytorium sprawdzanego; sesja z rootem
+`ai-pr-guardian` nie odczyta repozytorium sprawdzanego; sesja z rootem
 `Pod-strona-Szkolenia` nie wypchnie tutaj. Podział pracy jest z tego powodu
 stały i zgodny z architekturą: silnik jest domenowo ślepy, wiedza domenowa
 mieszka w repozytorium sprawdzanym w `.claude/knowledge/`.

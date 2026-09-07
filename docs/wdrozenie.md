@@ -20,14 +20,14 @@ zostaje przestawienie w ustawieniach repozytorium.
 
 ## KROK 0 — gałąź domyślna (30 sekund)
 
-Repo `AI-PR-GUARDIAN-` było puste, więc GitHub ustawił gałąź domyślną na
+Repo `ai-pr-guardian` było puste, więc GitHub ustawił gałąź domyślną na
 `claude/ai-pr-guardian-github-aptb2v`. Workflow pobiera plugin przez
 `actions/checkout` bez `ref`, czyli z gałęzi domyślnej — powinna nazywać się
 `main`.
 
 `main` jest już wypchnięty. Zostaje:
 
-    https://github.com/krzysiek2115op/AI-PR-GUARDIAN-/settings/branches
+    https://github.com/krzysiek2115op/ai-pr-guardian/settings/branches
 
 → *Default branch* → ikona przełączenia → wybierz `main` → **Update**.
 
@@ -245,14 +245,14 @@ prowadzą do istniejącej kotwicy.
 
 Zanim otworzysz testowego PR-a, sprawdź łańcuch lokalnie:
 
-    git clone https://github.com/krzysiek2115op/AI-PR-GUARDIAN- ~/AI-PR-GUARDIAN-
-    cd ~/AI-PR-GUARDIAN-
+    git clone https://github.com/krzysiek2115op/ai-pr-guardian ~/ai-pr-guardian
+    cd ~/ai-pr-guardian
     node --test scripts/*.test.mjs        # oczekiwane: 20/20
     claude plugin validate .              # oczekiwane: Validation passed
 
 Potem, w katalogu Pod-strona-Szkolenia, na gałęzi z jakąkolwiek zmianą kodu:
 
-    node ~/AI-PR-GUARDIAN-/scripts/zakres.mjs --baza origin/plugin-1-sklep-kursow
+    node ~/ai-pr-guardian/scripts/zakres.mjs --baza origin/plugin-1-sklep-kursow
 
 Powinno wypisać `"kod": true` i `"straznicy": ["straznik-regresji"]`.
 Jeśli wypisze `"kod": false` z powodem — filtr ścieżek uznał zmianę za
@@ -283,8 +283,8 @@ inline, które trzeba by wtedy publikować osobnym krokiem.
 
 Wymaga wyłącznie tokenu. **Nie wymaga runnera.**
 
-    git clone https://github.com/krzysiek2115op/AI-PR-GUARDIAN- ~/AI-PR-GUARDIAN-
-    cd ~/AI-PR-GUARDIAN-
+    git clone https://github.com/krzysiek2115op/ai-pr-guardian ~/ai-pr-guardian
+    cd ~/ai-pr-guardian
     node --test scripts/*.test.mjs      # kontrola: 54/54
     node scripts/zmierz.mjs --sucho     # kontrola: 8 fixture'ów
     node scripts/zmierz.mjs             # właściwy pomiar
