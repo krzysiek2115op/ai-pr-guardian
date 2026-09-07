@@ -8,19 +8,25 @@ Blocks the push locally and marks the PR on GitHub.
 
 > ⚠️ **An experiment, not a product.** It was built to test one idea: whether a model
 > can guard the classes of bug a script cannot catch. It has never run against a real
-> pull request or a self-hosted runner, it is not maintained, and it is not part of my
-> portfolio. The repository stays public because the measurement in `docs/STAN.md`
-> may be useful to someone.
+> pull request or a self-hosted runner, and it is not maintained. The repository stays
+> public because the measurement in `docs/STAN.md` may be useful to someone.
 >
-> **Authorship:** 11 of its 13 commits were written by Claude Code — the tool largely
-> wrote itself. Measured with `git shortlog -sn main`.
+> **Authorship:** **11 of its 15 commits were written by Claude Code** — the tool largely
+> wrote itself. Measured with `git shortlog -sn main` (the other 4 sit under two git
+> identities belonging to the same author).
+>
+> **In my portfolio — but not as a product.** Owner's decision, 2026-09-07: this project
+> is shown as **evidence of directing AI agents** — architecture, permission boundaries,
+> mandatory verification and measurement of the outcome. Not as deployed tooling, and not
+> as code I typed myself. Both caveats above are stated wherever this entry is used.
 
 ---
 
 ## Why it exists
 
-The project it was built for had a dense net of automation: 25 script guards, 75 tests,
-7 smoke tests and 9 golden files. It still shipped bugs.
+The project it was built for had a dense net of automation: 39 script guards, 84 tests,
+18 smoke tests and 10 golden files *(measured 2026-09-07; when this tool was built, in
+August 2026, the figures were 25 / 75 / 7 / 9)*. It still shipped bugs.
 
 Reviewing its known-issues register showed why — **4 of 13 known bug classes had no automated
 protection at all**:

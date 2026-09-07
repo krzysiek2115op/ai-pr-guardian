@@ -8,11 +8,18 @@ skryptowych, testów i smoke'ów — **nie ich zamiennik**.
 > ⚠️ **Projekt eksperymentalny, nie produkt.** Powstał jako sprawdzenie jednego
 > pomysłu: czy model potrafi pilnować klas błędów, których nie da się złapać
 > skryptem. Nie był uruchomiony na prawdziwym Pull Requeście ani na self-hosted
-> runnerze, nie jest utrzymywany i nie należy do portfolio. Repozytorium zostaje
-> publiczne, bo pomiar z `docs/STAN.md` może się komuś przydać.
+> runnerze i nie jest utrzymywany. Repozytorium zostaje publiczne, bo pomiar
+> z `docs/STAN.md` może się komuś przydać.
 >
-> **Autorstwo:** 11 z 13 commitów napisał Claude Code — narzędzie powstało
-> w większości samo o sobie. Zmierzone: `git shortlog -sn main`.
+> **Autorstwo:** **11 z 15 commitów napisał Claude Code** — narzędzie powstało
+> w większości samo o sobie. Zmierzone: `git shortlog -sn main` (pozostałe 4 są
+> pod dwiema tożsamościami gita tego samego autora).
+>
+> **W portfolio — ale nie jako produkt.** Decyzja właściciela z 2026-09-07:
+> ten projekt jest pokazywany jako **dowód pracy z agentami AI** — architektura,
+> granice uprawnień, obowiązkowa weryfikacja i pomiar wyniku. Nie jako wdrożone
+> narzędzie i nie jako własnoręcznie napisany kod. Oba powyższe zastrzeżenia
+> padają przy każdym użyciu tej pozycji.
 
 | | |
 |---|---|
@@ -23,8 +30,9 @@ skryptowych, testów i smoke'ów — **nie ich zamiennik**.
 
 ## Po co to jest
 
-Repozytorium sprawdzane ma 25 strażników skryptowych, 75 testów, 7 smoke'ów
-i 9 goldenów. To jest gęsta siatka i model nie ma jej dublować.
+Repozytorium sprawdzane ma 39 strażników skryptowych, 84 testy, 18 smoke'ów
+i 10 goldenów *(pomiar 2026-09-07; gdy powstawało to narzędzie, w sierpniu 2026,
+było ich 25 / 75 / 7 / 9)*. To jest gęsta siatka i model nie ma jej dublować.
 
 Rejestr `rejestr/znane-bledy.json` ma 13 wpisów. **Cztery z nich nie mają
 żadnej ochrony automatycznej**:
