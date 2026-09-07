@@ -1,5 +1,7 @@
 # AI PR Guardian
 
+*[English version →](README.en.md)*
+
 Strażnik AI dla Pull Requestów. Dodatkowa bramka jakości obok strażników
 skryptowych, testów i smoke'ów — **nie ich zamiennik**.
 
